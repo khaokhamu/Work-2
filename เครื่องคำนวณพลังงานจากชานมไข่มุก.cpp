@@ -1,5 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
+// มีไข่มุก 3 เเบบ H คือ ไข่มุกน้ำผึ้ง O คือ ไข่มุกดั่งเดิม J คือ ไข่มุกเยลลี่ 
+// ชามี 3 ประเภท มี rose tea (R) เเละ taiwan tea (T) เเละ Macha tea (M)
+// ระดับความหวาน มี 3 ระดับ หวานน้อย (1) , ปานกลาง(2), หวานมาก (3)
 
 
 int main(){
@@ -18,3 +21,8 @@ int main(){
     cin >> boba >> gram >> tea >> sweet >> cc;
     cout << 1LL*gram*mp[boba][0] + 1LL*cc*mp[tea][sweet-1] << '\n';
 }
+/*ข้อมูลเข้า 
+   H 10
+   T 2 20 
+  ข้อมูลออก
+  1050 กิโลเเคลลอรี่*/
